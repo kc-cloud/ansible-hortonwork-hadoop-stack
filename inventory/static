@@ -1,0 +1,25 @@
+######################################################
+##
+## The static inventory puts the hosts in different groups as described here: http://docs.ansible.com/ansible/intro_inventory.html#hosts-and-groups
+## Variables would be defined directly for each host, including the ambari_server.
+## For authentication, either the password or the SSH Private Key can be used.
+##
+######################################################
+
+[hdp-masternode-01]
+hdp-name-node1 ansible_host=10.0.75.3 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+
+[hdp-masternode-02]
+hdp-name-node2 ansible_host=10.0.75.4 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+
+[hdp-management]
+hdp-mgmt-node ansible_host=10.0.75.1 ansible_user=hdpuser ansible_ssh_pass=welcome1 ambari_server=true
+
+[hdp-worker]
+hdp-data-node1 ansible_host=10.0.75.11 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+hdp-data-node2 ansible_host=10.0.75.12 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+hdp-data-node3 ansible_host=10.0.75.13 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+hdp-data-node4 ansible_host=10.0.75.14 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"
+
+[hdp-ingest]
+hdp-ingest-node ansible_host=10.0.75.2 ansible_user=hdpuser ansible_ssh_private_key_file="~/.ssh/id_dsa"

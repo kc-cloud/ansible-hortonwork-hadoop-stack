@@ -1,1 +1,0 @@
-# ansible-hortonwork-hadoop-stack
