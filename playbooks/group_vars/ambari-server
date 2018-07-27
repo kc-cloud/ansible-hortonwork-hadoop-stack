@@ -1,4 +1,24 @@
 ---
+
+###########
+#
+# These variables would be used by the 'blueprint_dynamic.j2' Jinja2 template to generate the blueprint JSON.
+# This blueprint will build an HDP cluster with 3 master services nodes and 1 or more slave nodes.
+#   hdp-masternode-01 & hdp-masternode-02:
+#       - Master nodes hosting HA Hadoop services
+#   hdp-management:
+#       - Master node hosting Ambari and other utility services
+#   hdp-worker:
+#       - Worker nodes hosting data node and hbase region servers
+#   hdp-ingest:
+#       - Node hosting services that ingest log data into the platform
+#   hdp-db
+#       - Node for Ambari and Hive metastores, and its an external database
+# The other two master services are running the main HA Hadoop services.
+# It will also install Ranger (both Admin and UserSync) on the management node.
+#
+###########
+
 ambari_admin_user: 'admin'
 ambari_admin_password: 'admin'                                  # the password for the above admin user
 ambari_admin_default_password: 'admin'                          # no need to change this (unless the Ambari default changes)
