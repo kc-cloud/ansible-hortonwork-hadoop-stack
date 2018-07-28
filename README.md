@@ -2,6 +2,8 @@
 
 This repository contains the configurations to install 12 nodes Hortonworks Data Platform (HDP) cluster and setup 3 High-Available Masters using the ansible roles developed Hortonworks. 
 
+## Blueprint
+![blueprint](https://github.com/kc-cloud/ansible-hortonwork-hadoop-stack/blob/master/blue-print.png)
 ## Prerequisite
 * Ansible roles and playbooks developed by  Hortonworks (https://github.com/hortonworks/ansible-hortonworks)
 * pre-installed MySQL database
