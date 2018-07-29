@@ -8,7 +8,7 @@ This repository contains the configurations to deploys 12 nodes Hortonworks Data
 
 
 ## Blueprint
-![blueprint](https://github.com/kc-cloud/ansible-hortonwork-hadoop-stack/blob/master/blue-print.png)
+![blueprint](https://github.com/kc-cloud/ansible-hortonwork-hadoop-stack/blob/master/blueprint.png)
 ## Prerequisite
 * Ansible roles and playbooks developed by  Hortonworks (https://github.com/hortonworks/ansible-hortonworks)
 * pre-installed MySQL database
