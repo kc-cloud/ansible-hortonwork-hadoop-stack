@@ -19,7 +19,7 @@ Tested in the following Operating systems in the Google Cloud Platform
 
 ## Steps to configure and execute ansible playbooks:
    * download the repository from https://github.com/hortonworks/ansible-hortonworks.git 
-   * modified ansible-hortonwork-hadoop-stack/inventory/static to add the 12 nodes (as given in this repository)
-   * modified ansible-hortonwork-hadoop-stack/playbooks/group_vars/all.yml (as given in this repository) to add version details
-   * added ansible-hortonwork-hadoop-stack/playbooks/group_vars/ambari-server.yml for the ansible to generate ambari blueprint
+   * modified _ansible-hortonwork-hadoop-stack/inventory/static_ to add the 12 nodes (as given in this repository)
+   * modified _ansible-hortonwork-hadoop-stack/playbooks/group_vars/all.yml_ (as given in this repository) to add version details
+   * added _ansible-hortonwork-hadoop-stack/playbooks/group_vars/ambari-server.yml_ for the ansible to generate ambari blueprint
    * follow the steps given in the https://github.com/hortonworks/ansible-hortonworks/blob/master/INSTALL_static.md
