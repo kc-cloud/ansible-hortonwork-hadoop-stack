@@ -1,6 +1,11 @@
 # ansible-hortonwork-hadoop-stack
 
-This repository contains the configurations to install 12 nodes Hortonworks Data Platform (HDP) cluster and setup 3 High-Available Masters using the ansible roles developed Hortonworks. 
+This repository contains the configurations to deploys 12 nodes Hortonworks Data Platform (HDP) cluster and setup 3 High-Available Masters using the ansible roles developed by Hortonworks. Installation contains:
+
+* ambari_version: '2.5.2.0'
+* hdp_version: '2.6.2.0'
+* hdf_version: '3.0.1.1'
+
 
 ## Blueprint
 ![blueprint](https://github.com/kc-cloud/ansible-hortonwork-hadoop-stack/blob/master/blue-print.png)
